@@ -31,7 +31,7 @@ public class Translator extends HttpServlet{
 	
 	 public String traducir(String pTraducir) throws ServletException, IOException{
 		 LanguageTranslation s2t = new LanguageTranslation();
-		 s2t.setUsernameAndPassword("fc5685b1-e986-440b-86af-4eec8815eff3",  "RfUjrdPJxhVi");
+		 s2t.setUsernameAndPassword("530d13fa-6704-4726-9746-1ecf04378ee0",  "86pyvyALNnQI");
 	   TranslationResult result = s2t.translate(pTraducir, "es", "en");
 	   String lineaTraducida=result.getTranslations().get(0).getTranslation().toString();
 	   System.out.println(lineaTraducida);

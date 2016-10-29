@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Proy2
+  host: Proy2
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - Voz_a_texto
+  - Language_Translator

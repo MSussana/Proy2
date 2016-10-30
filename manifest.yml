@@ -9,4 +9,4 @@ applications:
   services:
   - availability-monitoring-auto
   - Voz_a_texto
-  - Language_Translation
+  - Language_translation

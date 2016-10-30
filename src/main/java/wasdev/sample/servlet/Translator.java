@@ -15,13 +15,10 @@ import javax.sound.sampled.TargetDataLine;
 
 
 
-import com.ibm.watson.developer_cloud.http.HttpMediaType;
-import com.ibm.watson.developer_cloud.language_translation.*;
+
 import com.ibm.watson.developer_cloud.language_translation.v2.*;
 import com.ibm.watson.developer_cloud.language_translation.v2.model.*;
-import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
-import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
-import com.ibm.watson.developer_cloud.util.CredentialUtils;
+
 
 
 @WebServlet("/SimpleServlet")

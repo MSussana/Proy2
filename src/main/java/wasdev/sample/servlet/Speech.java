@@ -13,13 +13,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.TargetDataLine;
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 
 import com.ibm.watson.developer_cloud.http.HttpMediaType;
-import com.ibm.watson.developer_cloud.speech_to_text.v1.RecognizeOptions;
+//import com.ibm.watson.developer_cloud.speech_to_text.v1.RecognizeOptions;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.SpeechToText;
 import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechResults;
-import com.ibm.watson.developer_cloud.speech_to_text.v1.websocket.BaseRecognizeDelegate;
+//import com.ibm.watson.developer_cloud.speech_to_text.v1.websocket.BaseRecognizeDelegate;
 import com.ibm.watson.developer_cloud.util.CredentialUtils;
 
 @WebServlet("/SimpleServlet")
@@ -29,10 +29,14 @@ public class Speech extends HttpServlet {
 	 
 	 public String voz_a_texto(String pAudio) throws ServletException, IOException{
 		SpeechToText s2t = new SpeechToText();
-	   s2t.setUsernameAndPassword("dc09a5b2-8983-409a-a568-3521ad6b0580", "aOlqfDg4eKWu");
-	   SpeechResults results = s2t.recognize(new File(pAudio));
-	   System.out.println(results.getResults().get(0).getAlternatives().get(0).getTranscript());
-	   return results.getResults().get(0).getAlternatives().get(0).getTranscript();
+	   s2t.setUsernameAndPassword("fe0c1e3d-4bce-4310-b6e0-4c256e1b6f25", "LOrTEqJhjYSc");
+	   File audio = new File("C:/Users/Sussana/Downloads/audio-file.wav");
+
+	   SpeechResults transcript = s2t.recognize(audio).execute();
+	   System.out.println(transcript);
+	   //ystem.out.println(results.getResults().get(0).getAlternatives().get(0).getTranscript());
+	   //return results.getResults().get(0).getAlternatives().get(0).getTranscript();
+	return pAudio;
 	   
 	 }
  

@@ -58,6 +58,7 @@
     <artifactId>language-translator</artifactId>
     <version>3.5.0</version>
 	</dependency>
+		
     </dependencies>
 
     <build>

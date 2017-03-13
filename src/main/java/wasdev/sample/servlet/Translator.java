@@ -29,7 +29,7 @@ public class Translator extends HttpServlet{
 	 public String traducir(String pTraducir) throws ServletException, IOException{
 		 LanguageTranslation s2t = new LanguageTranslation();
 		 s2t.setUsernameAndPassword("530d13fa-6704-4726-9746-1ecf04378ee0",  "86pyvyALNnQI");
-	   TranslationResult result = s2t.translate(pTraducir,Language.ENGLISH, Language.SPANISH)
+	   TranslationResult result = s2t.translate(pTraducir,Language.SPANISH, Language.ENGLISH)
 			   .execute();
 			   String lineaTraducida=result.getTranslations().get(0).getTranslation().toString();
 	   System.out.println(lineaTraducida);
@@ -37,11 +37,11 @@ public class Translator extends HttpServlet{
 	   
 	 }
 
-	 public static void main(String[] args) throws ServletException, IOException {
+	/* public static void main(String[] args) throws ServletException, IOException {
 		 Translator s2t=new Translator();
 		 s2t.traducir("obligaciones del personal del laboratorio");
 	}
-	 
+	 */
 
 
 }

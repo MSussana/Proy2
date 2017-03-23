@@ -1,4 +1,4 @@
-package wasdev.sample.servlet;
+package logicaDeNegocios;
 
 import java.awt.List;
 import java.io.File;
@@ -34,8 +34,8 @@ import com.ibm.watson.developer_cloud.speech_to_text.v1.model.SpeechModel;
 import com.ibm.watson.developer_cloud.util.CredentialUtils;
 
 
-@WebServlet("/SimpleServlet")
-public class Speech extends HttpServlet {
+
+public class Speech{
 	
 	  String linea = null;
 	  public void onTranscription(SpeechResults speechResults) {

@@ -1,4 +1,4 @@
-package wasdev.sample.servlet;
+package logicaDeNegocios;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,8 +21,8 @@ import com.ibm.watson.developer_cloud.language_translation.v2.model.*;
 
 
 
-@WebServlet("/SimpleServlet")
-public class Translator extends HttpServlet{
+
+public class Translator {
 			
 	
 	

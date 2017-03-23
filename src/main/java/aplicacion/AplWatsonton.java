@@ -5,6 +5,8 @@ import java.util.Scanner;
 import javax.servlet.ServletException;
 import javax.sound.sampled.LineUnavailableException;
 
+import logicaDeNegocios.Speech;
+import logicaDeNegocios.Translator;
 import wasdev.sample.servlet.*;
 public class AplWatsonton {
 	public static void main(String[] args) throws ServletException, IOException, InterruptedException, LineUnavailableException {
